@@ -1,0 +1,1 @@
+cout << "El promedio es: " << promedio << endl;
