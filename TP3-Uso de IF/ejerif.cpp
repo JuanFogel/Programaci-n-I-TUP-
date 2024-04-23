@@ -14,13 +14,12 @@ int main()
     cout << "Ingrese n3: " << endl;
     cin >> c;
 
-    if (!a > b && b > c)
-        cout << "el tercer numero es mayor " << endl;
-    else if (a > c)
-        cout << "el primer numero es mayor" << endl;
-
+    if (a > b && a > c)
+        cout << "el primer numero es mayor " << endl;
+    else if (b > c)
+        cout << "el segundo numero es mayor" << endl;
     else
-        cout << "el segundo numero es el mayor" << endl;
+        cout << "el tercero numero es el mayor" << endl;
 
     return 0;
 }

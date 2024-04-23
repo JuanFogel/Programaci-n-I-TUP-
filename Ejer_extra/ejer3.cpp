@@ -26,8 +26,8 @@ int main()
     else
     {
        cout << "\t El numero es impar " << a << endl;  
-       int logbase = log10(a);                         //string num = std(a);
-        int potencia = pow(10, logbase);            //char primer_cifra = num[0];*/
+       int logbase = log10(a);                         //string primer_cifra = to_string(a);
+        int potencia = pow(10, logbase);              //cout << "\t La cifra del primer numero es: " << primer_cifra[0]<< endl;
         int primer_cifra = a / potencia;
         cout << "\t La cifra del primer numero es: " << primer_cifra<< endl;
     }
