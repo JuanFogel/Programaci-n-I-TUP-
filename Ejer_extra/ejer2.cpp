@@ -22,23 +22,23 @@ int main()
         cout << "\t Dio un total de: " << vueltas << " vueltas" << endl;
 
         cuadrante = (angulo % 360); // Guardo el resto que seria el valor del angulo en la primera vuelta
-
+        // Otra forma de resolverlo: cuadrante = (angulo /90) % 4 +1; al angulo lo dividimos x 90 que es 1/4 de 360.. y el resto de dividorlo por 4 +1
         cout << "\t El angulo en la primera vuelta es: " << cuadrante << " grados" << endl;
 
         if (cuadrante < 90) // Pregunto si el resto es -90 o -180 para que ingrese en caso que sea Verdadero y muestre en que cuadrante se encuentra
-            cout << "\t Se encuentra en el cuadrante N 1 " << endl;
+            cout << "\t Se encuentra en el cuadrante UNO " << endl;
         else if (cuadrante < 180)
-            cout << "\t Se encuentra en el cuadrante N 2 " << endl;
+            cout << "\t Se encuentra en el cuadrante DOS " << endl;
         else if (cuadrante < 270)
-            cout << "\t Se encuentra en el cuadrante N 3 " << endl;
+            cout << "\t Se encuentra en el cuadrante TRES " << endl;
         else
-            cout << "\t Se encuentra en el cuadrante N  " << endl;
+            cout << "\t Se encuentra en el cuadrante CUATRO  " << endl;
     }
     else // Si el angulo es menor a 360 calculo el sen, cos, tang...
     {
-        cout << "\t Su coseno es: " << cos(angulo) << endl;
-        cout << "\t Su seno es: " << sin(angulo) << endl;
-        cout << "\t Su tangente es: " << tan(angulo) << endl;
+        cout << "\t Su coseno es: " << cos(ang_radianes) << endl;
+        cout << "\t Su seno es: " << sin(ang_radianes) << endl;
+        cout << "\t Su tangente es: " << tan(ang_radianes) << endl;
     }
 
     return 0;

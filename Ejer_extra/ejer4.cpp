@@ -22,23 +22,20 @@ int main()
     if (a >= 1 && a <= 10 && b >= 1 && b <= 10)
     {
 
-        if (a % 2 == 0 || b % 2 == 0)
-        {
-            if (a > b)
-            {
-                res = pow(a, b);
-                cout << "El resultado del primer numero elevado al segundo es: " << res << endl;
-            }
-            else
-            {
-                res = pow(b, a);
-                cout << "El resultado del segundo numero elevado al aprimero es: : " << res << endl;
-            }
-        }
-        else
+        if (a % 2 == 0 && b % 2 == 0)
         {
             res = a / b;
             cout << "El resultado es: " << res << endl;
+        }
+        else if (a > b)
+        {
+            res = pow(a, b);
+            cout << "El resultado del primer numero elevado al segundo es: " << res << endl;
+        }
+        else
+        {
+            res = pow(b, a);
+            cout << "El resultado del segundo numero elevado al primero es: : " << res << endl;
         }
     }
     else

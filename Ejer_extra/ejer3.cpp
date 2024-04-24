@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cmath>
 #include <string>
-#include <iomanip>
 
 using namespace std;
 
@@ -20,17 +19,18 @@ int main()
     {
         cout << "\t El numero es par" << endl;
         res = trunc(log10(a)) + 1;
-        cout << "\t La cantidad de cifras es: " << setw(res) << endl;
+        cout << "\t La cantidad de cifras es: " << (res) << endl;
     }
     // si es impar devuelve el primer cifra del num.
     else
     {
-       cout << "\t El numero es impar " << a << endl;  
-       int logbase = log10(a);                         //string primer_cifra = to_string(a);
-        int potencia = pow(10, logbase);              //cout << "\t La cifra del primer numero es: " << primer_cifra[0]<< endl;
+        cout << "\t El numero es impar " << a << endl;
+        int logbase = log10(a);
+        int potencia = pow(10, logbase);
         int primer_cifra = a / potencia;
-        cout << "\t La cifra del primer numero es: " << primer_cifra<< endl;
+        cout << "\t La primer cifra es: " << primer_cifra << endl;
     }
     return 0;
-
 }
+// string primer_cifra = to_string(a);
+// cout << "\t La cifra del primer numero es: " << primer_cifra[0]<< endl;

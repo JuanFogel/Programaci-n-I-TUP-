@@ -3,24 +3,28 @@ using namespace std;
 
 int main()
 {
+    int res;
 
-    int a, b;
-    int vacio;
+    res = 6 + ((3 - 1) * 5) / 2 - (3 + 4 / 2) * 2 + 2;
+    cout << "el reusltadoes : " << res << endl;
 
-    cout << "Ingrese el primer numero\n";
-    cin >> a;
-    cout << "Ingrese el segundo numero\n";
-    cin >> b;
+    // int a, b;
+    // int vacio;
 
-    if (a > b)
-    {
-        vacio = a;
-        a = b;
-        b = vacio;
-    }
-    else
-        cout << "El primer numero no es mayor..." << endl;
+    // cout << "Ingrese el primer numero\n";
+    // cin >> a;
+    // cout << "Ingrese el segundo numero\n";
+    // cin >> b;
 
-    cout << "El valor del primer numero es: " << a << endl;
-    cout << "El valor del segundo numero es: " << b << endl;
+    // if (a > b)
+    // {
+    //     vacio = a;
+    //     a = b;
+    //     b = vacio;
+    // }
+    // else
+    //     cout << "El primer numero no es mayor..." << endl;
+
+    // cout << "El valor del primer numero es: " << a << endl;
+    // cout << "El valor del segundo numero es: " << b << endl;
 }
